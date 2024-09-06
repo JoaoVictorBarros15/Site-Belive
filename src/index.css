@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body{
+  background-image: url(./img/BelieveArq_50.JPG);
+  background-size: 200vh;
+  background-color: rgba(rgba(0, 0, 0, 0.737));
+  flex-direction: column;
+}   
+
+
