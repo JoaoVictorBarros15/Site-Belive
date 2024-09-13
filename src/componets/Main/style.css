@@ -1,11 +1,16 @@
-#main{
+#main {
     background-color: rgba(0, 0, 0, 0.537);
-    width: 60vh;
-    height: 30vh;
-    margin-left: 25vh;
+    width: 100%;
+    max-width: 60vh;
+    height: auto;
+    margin-left: 10vh; /* Ajuste a margem para posicionar mais ao canto */
     border-radius: 10px;
+    padding: 20px;
+    margin-top: 200px;
+    box-sizing: border-box;
 }
-#tittle{
+
+#tittle {
     text-align: start;
     margin-left: 20px;
     font-size: 30px;
@@ -13,23 +18,19 @@
     font-weight: bold;
 }
 
-#linha{
+#linha {
     width: 90%;
 }
-#paragrafo{
+
+#paragrafo {
     margin-top: 8px;
     text-align: start;
     margin-left: 20px;
     font-size: 20px;
     color: #fff;
 }
-#main{
-    padding: 20px;
-    margin-top:200px ;
 
-}
-
-#Button{
+#Button {
     background-color: #830909;
     border: none;
     border-radius: 10%;
@@ -39,8 +40,52 @@
     cursor: pointer;
 }
 
-#Button:hover{
-    background-color:chartreuse;
+#Button:hover {
+    background-color: chartreuse;
     color: black;
     transition: 0.5s;
 }
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    #main {
+        width: 80vw;
+        margin-left: 10vw;
+        padding: 10px;
+        margin-top: 100px;
+    }
+
+    #tittle {
+        font-size: 24px;
+    }
+
+    #paragrafo {
+        font-size: 16px;
+    }
+
+    #Button {
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main {
+        width: 90vw;
+        margin-left: 5vw;
+        padding: 5px;
+        margin-top: 50px;
+    }
+
+    #tittle {
+        font-size: 20px;
+    }
+
+    #paragrafo {
+        font-size: 14px;
+    }
+
+    #Button {
+        padding: 8px 20px;
+    }
+}
+

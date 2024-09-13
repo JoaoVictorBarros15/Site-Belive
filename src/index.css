@@ -1,18 +1,29 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-body{
+body {
   background-image: url(./img/BelieveArq_50.JPG);
   background-size: 200vh;
-  background-color: rgba(rgba(0, 0, 0, 0.737));
+  background-color: rgba(0, 0, 0, 0.737);
+  display: flex;
   flex-direction: column;
-}   
+}
 
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  body {
+    background-size: 100vh;
+  }
+}
 
+@media (max-width: 480px) {
+  body {
+    background-size: cover;
+  }
+}
