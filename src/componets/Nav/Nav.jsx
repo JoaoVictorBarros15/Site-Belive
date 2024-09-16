@@ -1,18 +1,19 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import "./Home.css";
-function Home() {
+import "./Nav.css";
+function Nav() {
     return(
         <div id="cabeçalho">
             <header className="header">
                 <div className="logo">
-                    <h1><Link to="/">Belive Arquitetura</Link></h1>
+                    <h1><Link to="/Site-Belive">Belive Arquitetura</Link></h1>
                 </div>
                 <div className="nav">
                     <ul>
                         <li><Link to="/about">Sobre</Link></li> {/* Link para a página "Sobre" */}
                         <li><a href="#projects">Projetos</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="https://linkme.bio/believe.arquitetura" target="_blank"
+                         rel="noopener noreferrer" >Contato</a></li>
                     </ul>
                 </div>
             </header>
@@ -24,4 +25,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Nav;

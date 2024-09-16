@@ -9,20 +9,40 @@ code {
 
 body {
   background-image: url(./img/BelieveArq_50.JPG);
-  background-size: 200vh;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.737);
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
 }
 
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
+/* Telas grandes */
+@media (min-width: 1200px) {
   body {
-    background-size: 100vh;
+    background-size: cover;
   }
 }
 
-@media (max-width: 480px) {
+/* Telas médias */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-size: 100% 100vh;
+  }
+}
+
+/* Telas pequenas */
+@media (min-width: 480px) and (max-width: 767px) {
+  body {
+    background-size: 100% 100vh;
+  }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 479px) {
   body {
     background-size: cover;
   }
