@@ -11,7 +11,7 @@ function Nav() {
                 <div className="nav">
                     <ul>
                         <li><Link to="/about">Sobre</Link></li> {/* Link para a página "Sobre" */}
-                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#Blog">Blog</a></li>
                         <li><a href="https://linkme.bio/believe.arquitetura" target="_blank"
                          rel="noopener noreferrer" >Contato</a></li>
                     </ul>
