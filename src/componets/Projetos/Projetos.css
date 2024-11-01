@@ -1,0 +1,48 @@
+.galeria-projetos {
+  background-color: rgba(58, 58, 58, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+.galeria-projetos .titulo-galeria {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.galeria-projetos .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projeto {
+  margin: 20px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.projeto:hover {
+  transform: scale(1.1);
+}
+
+.projeto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.projeto h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.projeto p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Nav from './componets/Nav/Nav';
 import About from './componets/About/About'; // Novo componente para a página Sobre
 import Main from './componets/Main/Main';
+import Projeto from './componets/Projetos/Projetos';
 import './App.css';
 
 
@@ -26,6 +27,7 @@ function App() {
           />
           {/* Página Sobre sem o Main */}
           <Route path="/about" element={<About />} />
+          <Route path="/Projetos" element={<Projeto/>} />
         </Routes>
       </div>
     </Router>
